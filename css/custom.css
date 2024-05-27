@@ -13,6 +13,18 @@
 .reveal section .gap1 {
     gap: 1em;
 }
+.reveal section .toright {
+    text-align: right;
+}
+.reveal section .toleft {
+    text-align: left;
+}
+.reveal section .smaller {
+    font-size: smaller;
+}
+.reveal section code {
+    color: blueviolet;
+}
 .reveal section .subtitle {
     font-size: 2rem;
 }
