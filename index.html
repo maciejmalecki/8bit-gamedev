@@ -8,7 +8,8 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +17,57 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown data-separator-vertical="^--$">
+					<script type="text/template">
+						Title
+						---
+						<!-- .slide: data-background-image="img/retro-collector.jpg"-->
+						![self](img/self.excalidraw.png)<!-- .element: class="img-reduce bg wide"-->
+						---
+						![c64scene](img/c64scene.png)
+						--
+						![c64scene answer](img/c64scene-answer.png)
+						---
+						<div class="r-hstack gap1">
+							<video data-autoplay loop src="img/tony-gameplay.mp4"></video>
+							<div>
+								<ul>
+									<li>5 months - a playable demo</li>
+									<li>12 months of dev total</li>
+									<li>5 levels</li>
+									<li>145 rooms</li>
+									<li>9 music tunes</li>
+								</ul>
+							</div>
+						</div>
+						<a href="https://monochrome-productions.itch.io/tony">https://monochrome-productions.itch.io/tony</a>
+						---
+						<div class="r-hstack gap1">
+							<div>
+								<ul>
+									<li>23,023 LOC of MOS 6502 Assembly</li>
+									<li>two 5'25'' 180kB disks; or</li>
+									<li>one 512kB cartridge</li>
+									<li>328 bytes of free memory left</li>
+									<li>0% of test code coverage</li>
+								</ul>
+							</div>
+							<video data-autoplay loop src="img/tony-lvl3-stones-2.mp4"></video>
+						</div>
+						---
+						<div class="r-hstack gap1">
+							<img src="img/test-harness.jpg" alt="Test">
+							<ul>
+								<li>tested with bare hands</li>
+								<li>tons of after marked storage tech</li>
+								<li>varied kinds of sound chips</li>
+							</ul>
+						</div>
+						---
+						<!-- .slide: data-background-image="img/codeium.png"-->
+
+					</script>
+				</section>
 			</div>
 		</div>
 
@@ -31,6 +81,10 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				width: 1200,
+				height: 700,
+				slideNumber: 'c/t',
+				autoPlayMedia: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]

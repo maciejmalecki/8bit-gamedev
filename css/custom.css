@@ -1,0 +1,41 @@
+.reveal section .pink {
+    color: #ff00ff;
+}
+.reveal section .cyan {
+    color: #00ffff;
+}
+.reveal section .left-align {
+    text-align: left;
+}
+.reveal section .no-ticks li {
+    list-style-type: none;
+}
+.reveal section .gap1 {
+    gap: 1em;
+}
+.reveal section .subtitle {
+    font-size: 2rem;
+}
+.reveal section .img-reduce {
+    height: 500px;
+}
+.reveal section .up {
+    text-transform: uppercase;
+}
+.reveal section .nt {
+    list-style-type: none;
+}
+.reveal section .bg {
+    background-color: rgba(0,0,0,0.5);
+}
+.reveal section .wide {
+    padding: 1em;
+}
+.logo {
+    position: fixed; /* Makes it stay in place on all slides */
+    top: 0.5em; /* Adjust the position as needed */
+    right: 0.5em; /* Adjust the position as needed */
+    width: 13em; /* Adjust the size as needed */
+    height: auto;
+    z-index: 1000; /* Ensures logo is above other elements */
+  }
